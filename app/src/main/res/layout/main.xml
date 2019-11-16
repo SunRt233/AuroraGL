@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.opengl.GLSurfaceView
+        android:id="@+id/activity_mainGLV"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"/>
+
+    <LinearLayout
+        android:layout_height="168dp"
+        android:layout_width="168dp"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:layout_height="0dp"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="1.0"
+            android:gravity="left|center">
+
+            <Button
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_height="56dp"
+                android:layout_width="56dp"
+                android:text="上"
+                android:textSize="20sp"
+                android:id="@+id/activity_gameBtn_u"/>
+
+            <Button
+                android:id="@+id/activity_gameBtn_f"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_height="56dp"
+                android:layout_width="56dp"
+                android:text="↑"
+                android:textSize="30sp"/>
+
+            <Button
+                android:id="@+id/activity_gameBtn_test"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_height="56dp"
+                android:layout_width="56dp"
+                android:text="Bar Button"/>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_height="0dp"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="1.0">
+
+            <Button
+                android:id="@+id/activity_gameBtn_l"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_height="56dp"
+                android:layout_width="56dp"
+                android:text="←"
+                android:layout_alignParentLeft="true"
+                android:textSize="30sp"/>
+
+            <Button
+                android:id="@+id/activity_gameBtn_r"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_height="56dp"
+                android:layout_width="56dp"
+                android:text="→"
+                android:layout_alignParentRight="true"
+                android:textSize="30sp"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_height="0dp"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="1.0"
+            android:gravity="left|center">
+
+            <Button
+                android:id="@+id/activity_gameBtn_d"
+                android:layout_height="56dp"
+                android:layout_width="56dp"
+                android:text="下"
+                style="?android:attr/buttonBarButtonStyle"
+                android:textSize="20sp"/>
+
+            <Button
+                android:id="@+id/activity_gameBtn_b"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_height="56dp"
+                android:layout_width="56dp"
+                android:text="↓"
+                android:textSize="30sp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+"
+        android:textSize="30sp"
+        android:textColor="#FFFFFF"
+        android:background="#55000000"/>
+
+</RelativeLayout>
